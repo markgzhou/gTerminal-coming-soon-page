@@ -65,7 +65,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
-                    <p class="copyright">Copyright &copy; 2017 - <a href="http://gTerminal.com">gTerminal.com</a>
+                    <p class="copyright">Copyright &copy; 2017 - <a target="_blank" href="https://gTerminal.com">gTerminal.com</a>
                     </p>
                 </div>
             </div>
@@ -74,21 +74,11 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
+
     <script>
         
 $(document).ready( function () {
     $('#wrapper').height($(document).height());
-
-    var $form = $('form');
-
-    if ( $form.length > 0 ) {
-        $('form input[type="submit"]').bind('click', function ( event ) {
-            if ( event ) event.preventDefault();
-            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-            if ( $form.validate() ) { register($form); }
-        });
-    }
 });
 
 function appendResult(userText , className, iconClass){
